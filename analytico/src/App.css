@@ -1,0 +1,114 @@
+/* App.css */
+
+.app-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 240px;
+  height: 46px;
+  margin-left: -70px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  margin-left: 400px; /* Adjusted margin for better alignment */
+  margin-top: -50px;
+}
+
+.dropdownMenu {
+  margin-right: 10px;
+  padding: 8px;
+}
+
+.contactButton,
+.contactButton2,
+.contactButton3
+ {
+  background-color: #1E91D6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-right: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.readMoreButton1{
+  color: #1E91D6;
+  margin-left: 10px;
+}
+.readMoreButton{
+  color: #1E91D6;
+  margin-left: 50px;
+}
+
+
+.contactButton:hover,
+.contactButton2:hover,
+.contactButton3:hover
+ {
+  background-color: #E18335;
+}
+
+/* Video section styles */
+.video-section {
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+video {
+  width: 80%;
+  height: auto;
+}
+
+/* Toggle button style */
+.toggleButton {
+  --color: #560bad;
+ font-family: inherit;
+ display: inline-block;
+ width: 12em;
+ height: 2.6em;
+ line-height: 2.5em;
+ margin: 20px;
+ position: relative;
+ overflow: hidden;
+ border: 2px solid var(--color);
+ transition: color .5s;
+ z-index: 1;
+ font-size: 17px;
+ border-radius: 6px;
+ font-weight: 500;
+ color: var(--color);
+ margin-left: 400px;
+}
+.toggleButton::before{
+  content: "";
+ position: absolute;
+ z-index: -1;
+ background: var(--color);
+ height: 150px;
+ width: 200px;
+ border-radius: 50%;
+}
+.toggleButton:hover{
+  color: #fff;
+}
+.toggleButton::before{
+  top: 100%;
+ left: 100%;
+ transition: all .7s;
+
+}
+.toggleButton:hover::before{
+  top: -20px;
+ left: -20px;
+}
+.toggleButton:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ }
